@@ -3,13 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <title> items </title>
+    <style>
+        .menu {
+        border: 1px solid black;
+        }
+        .content{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        }
+        footer {
+        border: 1px solid blue;
+        }
+    </style>
 </head>
 <body>
-<ol>
+<nav class = "menu">
+    <a href="{% url 'home' %}"> Домой </a><a href="{% url 'about'%}">   Об авторе </a>
+</nav>
+    <main class="content">
 <h1> Список товаров </h1>
-{% for item in items %}
+<ol>
+        {% for item in items %}
     <li> <a href="/item/{{ item.id }}">{{ item.name}} </a></li>
 {% endfor %}
 </ol>
+    </main>
+<footer>
+    (с)Кандаловский Е.А 2023г.
+</footer>
 </body>
 </html>

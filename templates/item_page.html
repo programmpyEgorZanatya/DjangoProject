@@ -1,13 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <nav class = "menu">
+    <a href="{% url 'home' %}"> Домой </a><a href="{% url 'about'%}">   Об авторе </a>
+</nav>
     <meta charset="UTF-8">
     <title> Item </title>
+    <style>
+        .menu {
+        border: 1px solid black;
+        }
+        .content{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        }
+        footer {
+        border: 1px solid blue;
+        }
+    </style>
 </head>
 <body>
 <h1> Страница товара</h1>
 Название: {{ item.name }} <br>
 Количество: {{ item.count }} <br>
 <a href="/items_list"> Назад </a>
+<footer>
+    (с)Кандаловский Е.А 2023г.
+</footer>
 </body>
 </html>

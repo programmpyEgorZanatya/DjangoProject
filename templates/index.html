@@ -3,9 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <title>Home</title>
+    <style>
+        .menu {
+        border: 1px solid black;
+        }
+        .content{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        }
+        footer {
+        border: 1px solid blue;
+        }
+    </style>
 </head>
 <body>
-Добро пожаловать!
-<h1>"Изучаем django"</h1> <strong>Автор</strong>: <i>Кандаловский Е.А.</i>
+<nav class = "menu">
+    <a href="{% url 'items-list'%}"> Список товаров</a>
+</nav>
+<main class = "content">
+    Добро пожаловать!
+</main>
+<footer>
+    (с)Кандаловский Е.А 2023г.
+</footer>
 </body>
 </html>
