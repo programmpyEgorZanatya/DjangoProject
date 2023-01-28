@@ -1,10 +1,12 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
     <nav class = "menu">
     <a href="{% url 'home' %}"> Домой </a><a href="{% url 'about'%}">   Об авторе </a>
 </nav>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'CSS/style.css' %}"/>
     <title> Item </title>
     <style>
         .menu {
