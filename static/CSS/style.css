@@ -89,7 +89,7 @@ footer {
     padding: 1%;
     padding-bottom: 2%;
 }
-footer img {width: 10%; float: left; margin-right: 5px;}
+footer img {width: 5%; float: left; margin-right: 7px;}
 #page-wrap:after {
     content: "";
     display: block;
